@@ -1,0 +1,4 @@
+  Operating System: Darwin 15.4.0 Darwin Kernel Version 15.4.0: Fri Feb 26 22:08:05 PST 2016; root:xnu-3248.40.184~3/RELEASE_X86_64 x86_64
+  Processor ID:     x86 Family 6 Model 69 Stepping 1, GenuineIntel
+  Host Name:        Gokuls-MacBook-Pro.local
+Invalid memory access of location 0x228 rip=0x7fff93d15c54

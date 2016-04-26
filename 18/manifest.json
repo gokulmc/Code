@@ -1,0 +1,42 @@
+{
+  "name": "18",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "description": "Open porn searches in incognito",
+  // "page_action": {
+  //   "default_icon": "icon.png",},
+  // "content_scripts": [
+  //   {
+  //     // Change 'matches' attribute to load content
+  //     // script only in pages you want to.
+  //     "matches": ["http://youtube.com/*","http://facebook.com/*"],
+  //     "css": ["basic.css"]
+  //     // "js": ["jquery.min.js", "contentscript.js"]
+  //   }
+  // ]
+    "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+        "bookmarks",
+        "history",
+        "notifications",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+        ],
+ 
+
+    "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*" , "https://www.google.co.in/*" , "https://www.google.com.ua/*" ],
+      "js":["incognito.js"]
+    }
+  ],
+
+   "background": {
+    "scripts": ["background.js"]
+  }
+
+}

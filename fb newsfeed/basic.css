@@ -1,0 +1,17 @@
+div[id*="topnews"], /* News feed */
+#pagelet_bookmark_nav, /* Left column: Bookmarks */
+a[href*="lists"], /* Left column: Lists like 'Close Friends' */
+div[id*="ticker"],
+/*div[id*="leftCol"],*/
+div[id*="sideNav"],
+div[id*="ego_section"],
+div[id*="sideNav"],
+div[id*="feed-main-what_to_watch"],
+/*div[id*="content"], deletes all contents in fb*/
+div[class*="fbReminders"],
+div[class*="fbChatSidebarBody"],
+div[id*="fbCharSidebar"] /* Right column / Chat sidebar: news ticker */
+{
+  display: none !important;
+}
+

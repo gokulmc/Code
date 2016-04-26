@@ -1,0 +1,28 @@
+{
+  "name": "Mc",
+  "manifest_version": 2,
+  "version": "0.1.1",
+  "description": "Must turn Codegram team members pics into troll faces.",
+  // "page_action": {
+  //   "default_icon": "icon.png",},
+  // "content_scripts": [
+  //   {
+  //     // Change 'matches' attribute to load content
+  //     // script only in pages you want to.
+  //     "matches": ["http://youtube.com/*","http://facebook.com/*"],
+  //     "css": ["basic.css"]
+  //     // "js": ["jquery.min.js", "contentscript.js"]
+  //   }
+  // ]
+    "browser_action": {
+    "default_icon": "icon.png"
+    // "default_popup": "popup.html"
+  },
+
+    "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*","https://www.youtube.com/*"],
+      "css": ["basic.css"]
+    }
+  ]
+}

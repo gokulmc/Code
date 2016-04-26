@@ -1,0 +1,99 @@
+
+------------------------------------------------------------------------
+       Segmentation violation detected at Thu Apr 14 15:10:42 2016
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding  : Disabled
+  Current Visual  : None
+  Default Encoding: UTF-8
+  MATLAB Root     : /Applications/MATLAB_R2012a.app
+  MATLAB Version  : 7.14.0.739 (R2012a)
+  Operating System: Darwin 15.4.0 Darwin Kernel Version 15.4.0: Fri Feb 26 22:08:05 PST 2016; root:xnu-3248.40.184~3/RELEASE_X86_64 x86_64
+  Processor ID    : x86 Family 6 Model 69 Stepping 1, GenuineIntel
+  Virtual Machine : Java 1.6.0_65-b14-468-11M4833 with Apple Inc. Java HotSpot(TM) 64-Bit Server VM mixed mode
+  Window System   : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Register State (from fault):
+  RAX = 00007fff5fbfc450  RBX = 00007fff93b6328e
+  RCX = 0000000120063580  RDX = 0000000000000000
+  RSP = 00007fff5fbfc460  RBP = 7d0081b00d6f68b4
+  RSI = 00000001224fba60  RDI = 0000000000000048
+
+   R8 = 00007fff5fbfc5d0   R9 = 00000001224fba60
+  R10 = 0000000130240ea0  R11 = 00007fff5fbfc4a8
+  R12 = 00007fff75562490  R13 = 0000000125001450
+  R14 = 00007fff5fbfc4a0  R15 = 00007fff93d15978
+
+  RIP = 00007fff8f42d4c0  RFL = 0000000130240ea0
+
+   CS = 0000000000000780   FS = 00007fff93d1583a   GS = 00007fff5fbfc528
+
+Stack Trace (from fault):
+[  0] 0x000000010013fc96 /Applications/MATLAB_R2012a.app/bin/maci64/libmwfl.dylib+00044182 _ZN2fl4diag15stacktrace_base7captureERKNS0_14thread_contextEm+000150
+[  1] 0x00000001001409b5 /Applications/MATLAB_R2012a.app/bin/maci64/libmwfl.dylib+00047541 fl_diag_terminate+000437
+[  2] 0x0000000100141e61 /Applications/MATLAB_R2012a.app/bin/maci64/libmwfl.dylib+00052833 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+000097
+[  3] 0x00000001008b7a7e /Applications/MATLAB_R2012a.app/bin/maci64/libmwmcr.dylib+00555646 mnTrapCtrlc+000254
+[  4] 0x00000001008b9144 /Applications/MATLAB_R2012a.app/bin/maci64/libmwmcr.dylib+00561476 _Z32mnRunPathDependentInitializationv+002132
+[  5] 0x00000001008b9568 /Applications/MATLAB_R2012a.app/bin/maci64/libmwmcr.dylib+00562536 _Z32mnRunPathDependentInitializationv+003192
+[  6] 0x00000001008b9b25 /Applications/MATLAB_R2012a.app/bin/maci64/libmwmcr.dylib+00564005 _Z32mnRunPathDependentInitializationv+004661
+[  7] 0x00000001008ba0d5 /Applications/MATLAB_R2012a.app/bin/maci64/libmwmcr.dylib+00565461 mnFatalSignalHandler+000149
+[  8] 0x00007fff8b7d552a           /usr/lib/system/libsystem_platform.dylib+00009514 _sigtramp+000026
+[  9] 0x00007fff7374e940 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+18446744073394743616 __block_literal_global67+019008
+[ 10] 0x00007fff93d15978 /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit+02369912 _ZNSt3__113unordered_mapIy6TNSRefIP18FI_TRunAfterHelperENS_4hashIyEENS_8equal_toIyEENS_9allocatorINS_4pairIKyS4_EEEEEixERSB_+000024
+[ 11] 0x00007fff93d15850 /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit+02369616 _ZN16TThreadSafeCacheIy6TNSRefIP18FI_TRunAfterHelperENSt3__14hashIyEENS4_8equal_toIyEEE3AddERKyRKS3_+000022
+[ 12] 0x00007fff93d15235 /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit+02368053 +[FI_TRunAfterHelper postFunctor:withOwningTargetID:delayInSec:]+000328
+[ 13] 0x00007fff93b1b04d /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit+00294989 _ZN23TCoalescingNodeObserver19RunDeferredHandlersEv+000259
+[ 14] 0x00007fff93b48b62 /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit+00482146 _ZN17TNodeEventHandler16HandleNodeEventsEP16OpaqueEventQueueb+000194
+[ 15] 0x00007fff93b494e5 /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit+00484581 _ZN17TMainEventHandler14NodeTickleProcEP16OpaqueEventQueue+000111
+[ 16] 0x00007fff86fab613 /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/DesktopServicesPriv+00607763 ___ZN21TClientChangeNotifier6WakeUpEv_block_invoke+000049
+[ 17] 0x00007fff864324ac /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00697516 __CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__+000012
+[ 18] 0x00007fff86411d05 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00564485 __CFRunLoopDoBlocks+000341
+[ 19] 0x00007fff864114ce /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00562382 __CFRunLoopRun+000910
+[ 20] 0x00007fff86410ed8 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00560856 CFRunLoopRunSpecific+000296
+[ 21] 0x00007fff8807f935 /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox+00198965 RunCurrentEventLoopInMode+000235
+[ 22] 0x00007fff8807f76f /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox+00198511 ReceiveNextEventCommon+000432
+[ 23] 0x00007fff8807f5af /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox+00198063 _BlockUntilNextEventMatchingListInModeWithFilter+000071
+[ 24] 0x00007fff83a42efa /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00298746 _DPSNextEvent+001067
+[ 25] 0x00007fff83a4232a /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00295722 -[NSApplication _nextEventMatchingEventMask:untilDate:inMode:dequeue:]+000454
+[ 26] 0x00007fff83a36e84 /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00249476 -[NSApplication run]+000682
+[ 27] 0x00000001069584eb /Applications/MATLAB_R2012a.app/bin/maci64/libmwuix.dylib+00300267 _Z13MacCancelQuitv+000091
+[ 28] 0x00007fff86428bbc /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00658364 __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__+000012
+[ 29] 0x00007fff86428b4f /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00658255 ___CFXRegistrationPost_block_invoke+000063
+[ 30] 0x00007fff86428ac7 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00658119 _CFXRegistrationPost+000407
+[ 31] 0x00007fff86428832 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00657458 ___CFXNotificationPost_block_invoke+000050
+[ 32] 0x00007fff863e55e2 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00382434 -[_CFXNotificationRegistrar find:object:observer:enumerator:]+001922
+[ 33] 0x00007fff863e4835 /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation+00378933 _CFXNotificationPost+000693
+[ 34] 0x00007fff92167fda /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation+00028634 -[NSNotificationCenter postNotificationName:object:userInfo:]+000066
+[ 35] 0x00007fff83b8d459 /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+01651801 -[NSApplication _postDidFinishNotification]+000297
+[ 36] 0x00007fff83b8d1c3 /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+01651139 -[NSApplication _sendFinishLaunchingNotification]+000203
+[ 37] 0x00007fff83a47e9d /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00319133 -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:]+000557
+[ 38] 0x00007fff83a47947 /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00317767 -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:]+000250
+[ 39] 0x00007fff921b662d /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation+00349741 -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:]+000290
+[ 40] 0x00007fff921b64a7 /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation+00349351 _NSAppleEventManagerGenericHandler+000102
+[ 41] 0x00007fff95ed9261 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE+00033377 _Z20aeDispatchAppleEventPK6AEDescPS_jPh+000531
+[ 42] 0x00007fff95ed8fe8 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE+00032744 _ZL25dispatchEventAndSendReplyPK6AEDescPS_+000031
+[ 43] 0x00007fff95ed8f04 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE+00032516 aeProcessAppleEvent+000288
+[ 44] 0x00007fff8808faf9 /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox+00264953 AEProcessAppleEvent+000055
+[ 45] 0x00007fff83a43394 /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00299924 _DPSNextEvent+002245
+[ 46] 0x00007fff83a4232a /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00295722 -[NSApplication _nextEventMatchingEventMask:untilDate:inMode:dequeue:]+000454
+[ 47] 0x00007fff83a36e84 /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00249476 -[NSApplication run]+000682
+[ 48] 0x00007fff83a0046c /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit+00025708 NSApplicationMain+001176
+[ 49] 0x0000000106958925 /Applications/MATLAB_R2012a.app/bin/maci64/libmwuix.dylib+00301349 _Z21MacRunApplicationMainiPPKcb+000053
+[ 50] 0x00000001008b36d7 /Applications/MATLAB_R2012a.app/bin/maci64/libmwmcr.dylib+00538327 _Z12mcr_run_mainRKN5boost9function2IiiA_PKcEEbiPS2_b+000119
+[ 51] 0x00000001000010a8 /Applications/MATLAB_R2012a.app/bin/maci64/../../Contents/MacOS/MATLAB_maci64+00004264 main+000136
+[ 52] 0x0000000100000ee8 /Applications/MATLAB_R2012a.app/bin/maci64/../../Contents/MacOS/MATLAB_maci64+00003816 start+000052
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.
